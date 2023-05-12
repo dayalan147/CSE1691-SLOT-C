@@ -1,0 +1,26 @@
+.Covariance and correlation 
+Children of three ages are asked to indicate their preference for three photographs of adults. Do the data suggest that there is a significant relationship between age and photograph preference? What is wrong with this study?
+  
+  Photograph:
+  Age of child               A                      B                      C
+5-6 years:      18                     22                     20
+
+7-8 years:         2                    28                     40
+
+9-10 years:     20                     10                     40
+
+1.	Use cov() to calculate the sample covariance between B  and  C.
+2.	Use another call to cov() to calculate the sample covariance matrix for the preferences.
+3.	Use cor() to calculate the sample correlation between B and C.
+4.	Use another call to cor() to calculate the sample correlation matrix for the preferences.
+ solution
+ 
+ age=c("5-6","7-8","9-10")
+ A=c(18,2,20)
+ B=c(22,28,10)
+ C=c(20,40,40)
+ cov(B,C)
+ photo=data.frame(A,B,C)
+ cov(photo)
+ cor(B,C)
+ cor(photo)
