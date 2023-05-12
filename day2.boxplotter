@@ -1,0 +1,4 @@
+class_a <- c(76,35,47,64,95,66,89,36,84)
+class_b <- c(51,56,84,60,59,70,63,66,50)
+boxplot(class_a, class_b, main = "Boxplot of Exam Scores", names = c("class A", "class B"), ylab = "Score")
+plot(class_a, class_b,  main = "Scatter plot of Exam Scores", xlab = "class A scores", ylab = "class B Scores")
